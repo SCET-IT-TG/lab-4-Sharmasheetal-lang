@@ -1,4 +1,6 @@
-use movieDB
+db = db.getSiblingDB("movieDB")
+
+db.movies.deleteMany({})
 
 db.movies.insertMany([
   { title: "3 Idiots", director: "Rajkumar Hirani", year: 2009, rating: 8.4, genres: ["Comedy", "Drama"], plot: "Two friends start a quest for a lost buddy who was once an optimistic engineering student." },
